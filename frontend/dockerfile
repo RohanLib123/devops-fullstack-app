@@ -10,5 +10,5 @@ COPY . .
 WORKDIR /devops-fullstack-app/frontend/
 EXPOSE 3000
 SHELL ["/bin/bash", "-c"]
-ENTRYPOINT [ "npm" , "install" ]
+RUN npm install
 CMD ["npm" , "start"]
