@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-c"]
 RUN source $HOME/.nvm/nvm.sh && nvm install node && nvm alias default node
 COPY devops-fullstack-app ./
 #COPY /root/devops-fullstack-app/frontend/package*.json ./
-WORKDIR ./devops-fullstack-app/frontend/
+WORKDIR /devops-fullstack-app/frontend/
 EXPOSE 3000
 SHELL ["/bin/bash", "-c"]
 ENTRYPOINT [ "npm" , "install" ]
