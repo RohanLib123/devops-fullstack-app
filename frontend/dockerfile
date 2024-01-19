@@ -5,7 +5,7 @@ RUN chmod +x /tmp/install_nvm.sh && \
     /tmp/install_nvm.sh 
 SHELL ["/bin/bash", "-c"]
 RUN source $HOME/.nvm/nvm.sh && nvm install node && nvm alias default node
-COPY /root/devops-fullstack-app ./
+COPY . .
 #COPY /root/devops-fullstack-app/frontend/package*.json ./
 WORKDIR /devops-fullstack-app/frontend/
 EXPOSE 3000
